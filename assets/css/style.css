@@ -1,0 +1,100 @@
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "a a a a a"
+    "b c c c c"
+    "b e e e e"
+    "d d d d d";
+     /* gap: 1rem; */
+}
+
+.grid-mid:nth-child(1){
+    grid-area: a;
+    background-color: #16213E;
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.grid-mid:nth-child(2){
+    grid-area: b;
+    background-color: #0F3460;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.grid-mid-a:nth-child(3){
+    grid-area: c;
+    background: rgb(0,36,27);
+    background: linear-gradient(90deg, rgba(0,36,27,0.865983893557423) 0%, rgba(84,9,121,0.8071603641456583) 44%, rgba(0,212,255,0.7539390756302521) 100%);
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    
+}
+.grid-mid-b:nth-child(4){
+    grid-area: e;
+    background: rgb(0,36,27);
+    background: linear-gradient(90deg, rgba(0,36,27,0.865983893557423) 0%, rgba(84,9,121,0.8071603641456583) 44%, rgba(0,212,255,0.7539390756302521) 100%);
+    display: flex;
+    align-content: center;
+    justify-content: space-around;  
+}
+.grid-mid:nth-child(5){
+    grid-area: d;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.categoria{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.card{
+    min-width:10rem;
+    max-width: 20rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.img{
+    min-width: 5rem;
+    max-width: 15rem;
+    background-color: #790252;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card-cuerpo{
+    display: flex;
+    flex-direction: column;
+}
+.valor{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    border-radius: 2rem 4rem;
+}
+
+.link{
+    outline: none;
+    text-decoration: none;
+    color: aliceblue;
+}
+.link:hover
+{
+    color: #790252;
+}
